@@ -1,0 +1,60 @@
+{
+  "name": "seru.dev",
+  "private": true,
+  "description": "My personal homepage with react",
+  "version": "1.0.0",
+  "author": "Seru <ghks1353@gmail.com>",
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.6",
+    "@types/classnames": "^2.2.7",
+    "@types/react": "^16.8.7",
+    "@types/react-helmet": "^5.0.8",
+    "@types/shortid": "^0.0.29",
+    "babel-preset-gatsby": "^0.1.9",
+    "classnames": "^2.2.6",
+    "gatsby": "^2.0.55",
+    "gatsby-plugin-react-helmet": "^3.0.8",
+    "gatsby-plugin-sass": "^2.0.10",
+    "gatsby-plugin-typescript": "^2.0.1",
+    "i18next": "^15.0.6",
+    "i18next-browser-languagedetector": "^3.0.1",
+    "i18next-xhr-backend": "^2.0.1",
+    "mobx": "5.*",
+    "mobx-react": "^5.4.2",
+    "mobx-react-devtools": "^6.0.3",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "react-i18next": "^10.4.1",
+    "shortid": "^2.2.14",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.1.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/react-test-renderer": "^16.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "prettier": "1.15.2",
+    "react-test-renderer": "^16.6.3",
+    "sucrase": "^3.10.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.16.0",
+    "tslint-react": "^3.6.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "gatsby": "sucrase-node ./node_modules/gatsby/dist/bin/gatsby.js",
+    "dev": "npm run gatsby develop",
+    "build": "rm -rf public && rm -rf .cache && npm run gatsby build",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghks1353/seru.dev"
+  }
+}
